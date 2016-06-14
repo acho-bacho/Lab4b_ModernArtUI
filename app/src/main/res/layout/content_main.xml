@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity"
+    android:id="@+id/main_layout">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="230dp"
+        android:id="@+id/blueTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#50acde" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/redTextView"
+        android:layout_alignTop="@+id/blueTextView"
+        android:layout_alignParentEnd="true"
+        android:background="#e96868" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="230dp"
+        android:id="@+id/purpleTextView"
+        android:background="#9f20de"
+        android:layout_alignBottom="@+id/aquaTextView"
+        android:layout_alignStart="@+id/blueTextView" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/grayTextView"
+        android:background="#e1dede"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/redTextView"
+        android:layout_alignEnd="@+id/seekBar" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/aquaTextView"
+        android:background="#45a297"
+        android:layout_below="@+id/grayTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:background="#575656"
+        android:layout_alignBottom="@+id/purpleTextView"
+        android:layout_alignStart="@+id/purpleTextView"
+        android:layout_alignEnd="@+id/aquaTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:indeterminate="false" />
+</RelativeLayout>
